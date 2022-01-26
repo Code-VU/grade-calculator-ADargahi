@@ -4,18 +4,22 @@ def calculateGrade():
     # This first line is provided for you
 
     grade = ""
-    hrs = input("Enter score: ")
+    score = input("Enter score: ")
 
     try:
-        hrs = float(hrs)
-        if hrs >=0.9:
+        score = float(score)
+        if score >= 1:
+            print("Bad score")
+        elif score >= 0.9:
             grade = "A"
-        elif hrs >=0.8:
+        elif score >= 0.8:
             grade = "B"
-        elif hrs >=0.7:
+        elif score >= 0.7:
             grade = "C"
-        elif hrs >=0.6:
+        elif score >= 0.6:
             grade = "D"
+        elif score < 0.6:
+            grade = "F"
         else:
             grade = "Bad score"
 
