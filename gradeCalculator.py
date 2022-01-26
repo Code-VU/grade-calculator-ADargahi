@@ -9,7 +9,7 @@ def calculateGrade():
     try:
         score = float(score)
         if score >= 1:
-            print("Bad score")
+            grade = "Bad score"
         elif score >= 0.9:
             grade = "A"
         elif score >= 0.8:
@@ -24,7 +24,7 @@ def calculateGrade():
             grade = "Bad score"
 
     except:
-        print("Bad score")
+        grade = "Bad score"
 
     print(grade)
 
