@@ -18,7 +18,7 @@ def calculateGrade():
             grade = "C"
         elif score >= 0.6:
             grade = "D"
-        elif score < 0.6:
+        elif score < 0.6 and score > .00:
             grade = "F"
         else:
             grade = "Bad score"
